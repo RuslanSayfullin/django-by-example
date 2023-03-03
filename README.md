@@ -39,7 +39,7 @@ $ sudo su - postgres
 Теперь запускаем командную оболочку PostgreSQL:
 $ psql 
 
-=# CREATE DATABASE django-4-by-example;
+=# CREATE DATABASE django_example;
 =# CREATE USER portaluser WITH PASSWORD 'myPassword';
 =# GRANT ALL PRIVILEGES ON DATABASE django_example TO portaluser;
 =# \q
@@ -73,5 +73,7 @@ Superuser created successfully.
 
 
 Django-приложение будет доступно по адресу: http://127.0.0.1:8000/
+
+
 
 
