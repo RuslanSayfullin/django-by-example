@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'django.contrib.humanize',
+    'taggit',
 ] + [
     'blog.apps.BlogConfig',
 ]
