@@ -17,6 +17,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '80.78.244.196', 'chiffre.tech', 'localhost']
 # кортеж с перечнем IP-адресов, с которых может вестись разработка.
 INTERNAL_IPS = ('127.0.0.1', '80.78.244.196', 'chiffre.tech', 'localhost')
 
+SITE_ID = 1
 
 # Application definition
 INSTALLED_APPS = [
@@ -29,6 +30,8 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django.contrib.humanize',
     'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ] + [
     'blog.apps.BlogConfig',
 ]
