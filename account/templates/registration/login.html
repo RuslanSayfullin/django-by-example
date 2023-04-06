@@ -11,6 +11,7 @@
   </p>
   {% else %}
     <p>Пожалуйста, используйте следующую форму для входа:</p>
+      Если у Вас нет учётной записи <a href="{% url "register" %}">зарегистрируйтесь</a>
   {% endif %}
   <div class="login-form">
     <form action="{% url 'login' %}" method="post">
