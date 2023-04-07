@@ -12,7 +12,7 @@ SECRET_KEY = secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '80.78.244.196', 'chiffre.tech', 'localhost']
+ALLOWED_HOSTS = ['chiffre.tech', 'localhost', '127.0.0.1', '80.78.244.196', ]
 
 # кортеж с перечнем IP-адресов, с которых может вестись разработка.
 INTERNAL_IPS = ('127.0.0.1', '80.78.244.196', 'chiffre.tech', 'localhost')
@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.postgres',
+    'social_django',
+    'django_extensions',
 ] + [
     'blog.apps.BlogConfig',
 ]
