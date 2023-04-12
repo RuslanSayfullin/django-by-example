@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
-from backend.psw import secret_key      # импорт секретного ключа
+from backend.psw import secret_key, \
+    social_auth_google_oauth2_key, \
+    social_auth_google_oauth2_secret  # импорт секретного ключа
 from .settings_db import DATABASES      # импорт данных для "базы данных"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -145,13 +147,18 @@ AUTHENTICATION_BACKENDS = [
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
 # Authentication using Facebook
-SOCIAL_AUTH_FACEBOOK_KEY = 'XXX'        # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = 'XXX'     # Facebook App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = ''        # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = ''     # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 # Authentication using Twitter
-SOCIAL_AUTH_TWITTER_KEY = 'XXX' # Twitter API Key
-SOCIAL_AUTH_TWITTER_SECRET = 'XXX' # Twitter API Secret
+SOCIAL_AUTH_TWITTER_KEY = ''        # Twitter API Key
+SOCIAL_AUTH_TWITTER_SECRET = ''     # Twitter API Secret
+
+# Authentication using Google
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = social_auth_google_oauth2_key         # Google Client ID
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = social_auth_google_oauth2_secret   # Google Client Secret
