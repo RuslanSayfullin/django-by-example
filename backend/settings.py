@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+
+from rest_framework.reverse import reverse_lazy
+
 from backend.psw import secret_key, \
     social_auth_google_oauth2_key, \
     social_auth_google_oauth2_secret  # импорт секретного ключа
@@ -183,3 +186,8 @@ if DEBUG:
     import mimetypes
     mimetypes.add_type('application/javascript', '.js', True)
     mimetypes.add_type('text/css', '.css', True)
+
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
