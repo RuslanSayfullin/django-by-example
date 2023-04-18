@@ -69,7 +69,9 @@ Superuser created successfully.
 ========================================================================================================================
 Откройте окно терминала и запустите все программы:
     Отправьте свое веб-приложение на сервер разработки Django в первом окне:
-        $ python3 manage.py runserver
+         python3 manage.py runserver
+        $ python manage.py runserver_plus --cert-file cert.crt
+
 
 
 Django-приложение будет доступно по адресу: http://127.0.0.1:8000/
