@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 ] + [
     'blog.apps.BlogConfig',
     'images.apps.ImagesConfig',
+    'actions.apps.ActionsConfig',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +115,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # "Поисковики" статики. Ищет статику в STATICFILES_DIRS.
