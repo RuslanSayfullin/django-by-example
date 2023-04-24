@@ -28,6 +28,7 @@ ALLOWED_HOSTS = ['chiffre.tech', 'localhost', '127.0.0.1', '80.78.244.196', ]
 INTERNAL_IPS = ('127.0.0.1', '80.78.244.196', 'chiffre.tech', 'localhost')
 
 SITE_ID = 1
+CART_SESSION_ID = 'cart'
 
 # Application definition
 INSTALLED_APPS = [
@@ -52,6 +53,7 @@ INSTALLED_APPS = [
     'images.apps.ImagesConfig',
     'actions.apps.ActionsConfig',
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
