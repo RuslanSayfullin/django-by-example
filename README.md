@@ -11,7 +11,7 @@
     PostgreSQL
 
 Скопируйте репозиторий с помощью команды:
-$ git clone https://github.com/RuslanSayfullin/django-5-by-example.git
+$ git clone https://github.com/RuslanSayfullin/django-by-example.git
 Перейдите в основную директорию с помощью команды: 
 $ cd django-5-by-example
 
